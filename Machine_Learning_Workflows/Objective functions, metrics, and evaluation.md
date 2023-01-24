@@ -69,5 +69,7 @@
 
    ` `**Hint**: check out MAPE.
 
+**In which situations do we choose precision over recall and vice-versa?** </br>
+**Ans**: https://datascience.stackexchange.com/questions/30881/when-is-precision-more-important-over-recall
 
 
