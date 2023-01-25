@@ -62,6 +62,39 @@ Spectral clustering is a technique that attempts to overcome the linear boundary
 How to implement: https://scw-aberystwyth.github.io/machine-learning-novice/04-clustering/index.html
 <hr/>
 
+10. **k-nearest neighbor classification: How would you choose the value of k?** </br>
+**Ans:**
+     * There are no pre-defined statistical methods to find the most favorable value of K.
+     * Initialize a random K value and start computing.
+     * Choosing a small value of K leads to unstable decision boundaries.
+     * The substantial K value is better for classification as it leads to smoothening the decision boundaries.
+     * Plot the error rate on a validation set vs the number of k and choose the k with the smallest error
+     * Choose odd k's to not have any ties.
+<hr/>
+
+11. **What happens when you increase or decrease the value of k?**
+**Ans**: Large values of k will lead to everything being classified as the most probable class. Small values of k will make the model highly variable and unstable, leading to large changes in classification for small changes in the data. 
+<hr/>
+
+12. **How does the value of k impact the bias and variance?** </br>
+**Ans:** Large k's lead to high bias, low variance while small k lead to low bias and high variance.
+<hr/>
+
+13. **K-means vs GMM, compare the two and when would you choose one over another?** </br>
+**Ans:** A good playlist for Gaussian mixture models and the EM algorithm: https://www.youtube.com/watch?v=3JYcCbO5s6M&list=PLBv09BD7ez_7beI0_fuE96lSbsr_8K8YD&ab_channel=VictorLavrenko </br>
+
+Incomplete
+<hr/>
+
+14. **Bagging and boosting are two popular ensembling methods. Random forest is a bagging example while XGBoost is a boosting example. What are some of the fundamental differences between bagging and boosting algorithms?** </br>
+**Ans** Detailed overview: https://towardsdatascience.com/ensemble-methods-bagging-boosting-and-stacking-c9214a10a205
+
+15. **How are the above ensemble methods used in deep learning? ** </br>
+**Ans:** https://machinelearningmastery.com/ensemble-methods-for-deep-learning-neural-networks/
+
+16. ** 
+
+
 
  
  
