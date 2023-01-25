@@ -82,8 +82,11 @@ How to implement: https://scw-aberystwyth.github.io/machine-learning-novice/04-c
 
 13. **K-means vs GMM, compare the two and when would you choose one over another?** </br>
 **Ans:** A good playlist for Gaussian mixture models and the EM algorithm: https://www.youtube.com/watch?v=3JYcCbO5s6M&list=PLBv09BD7ez_7beI0_fuE96lSbsr_8K8YD&ab_channel=VictorLavrenko </br>
+* The first visible difference between K-Means and Gaussian Mixtures is the shape the decision boundaries. GMs are somewhat more flexible and with a covariance matrix ∑ we can make the boundaries elliptical, as opposed to circular boundaries with K-means.
+* Another thing is that GMs is a probabilistic algorithm. By assigning the probabilities to datapoints, we can express how strong is our belief that a given datapoint belongs to a specific cluster.
+* If we compare both algorithms, the Gaussian mixtures seem to be more robust. However, GMs usually tend to be slower than K-Means because it takes more iterations of the EM algorithm to reach the convergence. They can also quickly converge to a local minimum that is not a very optimal solution.</br>
 
-Incomplete
+If you look for robustness, GM with K-Means initializer seems to be the best option. K-Means should be theoretically faster if you experiment with different parameters. GM on its own is not much of use because it converges too fast to a non-optimal solution for this dataset.
 <hr/>
 
 14. **Bagging and boosting are two popular ensembling methods. Random forest is a bagging example while XGBoost is a boosting example. What are some of the fundamental differences between bagging and boosting algorithms?** </br>
