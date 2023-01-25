@@ -95,10 +95,47 @@ If you look for robustness, GM with K-Means initializer seems to be the best opt
 15. **How are the above ensemble methods used in deep learning? ** </br>
 **Ans:** https://machinelearningmastery.com/ensemble-methods-for-deep-learning-neural-networks/
 
-16. ** 
+16. **Imagine we build a user-item collaborative filtering system to recommend to each user items similar to the items they’ve bought before. You can build either a user-item matrix or an item-item matrix. What are the pros and cons of each approach?** </br>
+**Ans:** 
+* Item-Item: 
+     * To make a new recommendation to a user, the idea of item-item method is to find items similar to the ones the user already “positively” interacted with. Two items are considered to be similar if most of the users that have interacted with both of them did it in a similar way.
+* User-User: 
+     * In order to make a new recommendation to a user, user-user method roughly tries to identify users with the most similar “interactions profile” (nearest neighbours) in order to suggest items that are the most popular among these neighbours (and that are “new” to our user). </br>
 
+The user-user method is based on the search of similar users in terms of interactions with items. As, in general, every user have only interacted with a few items, it makes the method pretty sensitive to any recorded interactions (high variance). On the other hand, as the final recommendation is only based on interactions recorded for users similar to our user of interest, we obtain more personalized results (low bias). </br>
 
+Conversely, the item-item method is based on the search of similar items in terms of user-item interactions. As, in general, a lot of users have interacted with an item, the neighbourhood search is far less sensitive to single interactions (lower variance). As a counterpart, interactions coming from every kind of users (even users very different from our reference user) are then considered in the recommendation, making the method less personalised (more biased). Thus, this approach is less personalized than the user-user approach but more robust.
+
+Detailed reading on recsys: https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada
+<hr/>
+
+17. **How to handle cold-start problem in recommendation systems?** </br>
+**Ans:** 
+* New item cold start: Use content based filtering. New item will have its own set of features
+* New visitor cold start: 
+     * Apply popularity based strategy
+     * Averaging over users wrt properties such as geo-location, device etc.</br>
+ Relevant read: https://medium.com/@markmilankovich/the-cold-start-problem-for-recommender-systems-89a76505a7
+ <hr/>
+  
+18. **How is Naive Bayes classifier naive?** </br>
+**Ans** Its naive because it assumes independence between features even though they might not be.
+<hr/>
+
+19. **What is gradient boosting?** </br>
+**Ans:** Build trees in iterations based on the error(residuals) produced by the last tree. In the first iteration, take the average of all target values and calculate residuals for each instance. Now choose the features, build the tree, and predict the residuals. (You can fix the number of leaves). To avoid overfitting, use lr (new prediction = old prediction + lr* leaf value prediction). Ultimately the residuals should minimize and the model converges. </br>
+Must watch series: https://www.youtube.com/watch?v=3CC4N4z3GJc&ab_channel=StatQuestwithJoshStarmer</br>
+Reading: https://towardsdatascience.com/all-you-need-to-know-about-gradient-boosting-algorithm-part-1-regression-2520a34a502
 
  
- 
+* Reminder: Check the math of GBM in detail
+<hr/>
+
+20. **What problems is gradient boosting good for?**
+**Ans** Gradient Boosting Algorithm is generally used when we want to decrease the Bias error. ii) Gradient Boosting Algorithm can be used in regression as well as classification problems. In regression problems, the cost function is MSE whereas, in classification problems, the cost function is Log-Loss.
+<hr/>
+
+21. **XGBoost and LightGBM**
+**Ans:** https://neptune.ai/blog/xgboost-vs-lightgbm
+
 
