@@ -98,6 +98,8 @@
 25.  What can you say about the ability to converge and generalize of Adam vs. SGD? What else can you say about the difference between these two optimizers? 
 26.  With model parallelism, you might update your model weights using the gradients from each machine asynchronously or synchronously. What are the pros and cons of asynchronous SGD vs. synchronous SGD?
 
+27. **Why are neural networks with hidden units not convex?** </br>
+**Ans:** If we have two identical structure of neural networks and we do a permutation of the hidden units in a way that preserves the function being computed, we will get a new minima with a different set of weights. Therefore the function learnt by the neural network will not be convex as there's no global minima.
 
 
   
