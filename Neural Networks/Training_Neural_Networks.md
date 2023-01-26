@@ -101,6 +101,7 @@
 27. **Why are neural networks with hidden units not convex?** </br>
 **Ans:** If we have two identical structure of neural networks and we do a permutation of the hidden units in a way that preserves the function being computed, we will get a new minima with a different set of weights. Therefore the function learnt by the neural network will not be convex as there's no global minima.
 
+28. **Problems encountered while training neural networks and their diagnostics** </br><img width="623" alt="image" src="https://user-images.githubusercontent.com/29446732/214734985-aa9ed98a-1f09-4375-b0df-27e746a2746f.png">
 
   
 
