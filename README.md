@@ -4,7 +4,8 @@
 ## Coding/Data Structures
 
 ## ML Breadth
-
+This interview is intended to evaluate your general knowledge of ML concepts both from theoretical and practical perspectives.
+For a detailed overview of Machine Learning, go through the Stanford's ML course (CS229) notes 
 ## ML system design
 
 ## ML coding
