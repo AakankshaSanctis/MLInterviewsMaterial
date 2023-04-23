@@ -15,7 +15,7 @@ For a detailed overview of Machine Learning, go through the [Stanford's ML cours
 
 * For some quick revision, you can go through some very well compiled cheatsheets for ML: https://towardsdatascience.com/machine-learning-algorithms-cheat-sheet-2f01d1d3aa37
 
-* For interview focussed prep, Chip Huyen's [Machine Learning interview book](https://huyenchip.com/ml-interviews-book/) is a golden resource. She has compiled commonly asked questions in ML interviews which in themselves are great for revising ML concepts. I am attempted to answer some of the questions from this book for reference.
+* For interview focussed prep, Chip Huyen's [Machine Learning interview book](https://huyenchip.com/ml-interviews-book/) is a golden resource. She has compiled commonly asked questions in ML interviews which in themselves are great for revising ML concepts. I have attempted to answer some of the questions from this book for reference.
 
 * For ML concepts, a quick revision playlist is Victor Lavrenko's [Applied Machine Learning class](https://www.youtube.com/@vlavrenko/playlists?view=50&sort=dd&shelf_id=10).
 
