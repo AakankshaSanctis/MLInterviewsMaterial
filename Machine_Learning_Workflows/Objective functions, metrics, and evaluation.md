@@ -65,6 +65,20 @@
 1. MPE (Most Probable Explanation) vs. MAP (Maximum A Posteriori)
    1. [E] How do MPE and MAP differ?
    1. [H] Give an example of when they would produce different results.
+   2. MPE (Most Probable Explanation) and MAP (Maximum A Posteriori) are two closely related but different concepts in probability and inference:
+
+    MPE refers to finding the single most likely assignment or explanation for a set of variables or observations. It aims to find the mode of the probability distribution - the point with highest probability density.
+    MAP refers to finding the assignment that maximizes the posterior probability distribution. It aims to find the point that maximizes the product of the likelihood and the prior.
+
+The key differences:
+
+    MPE only considers the likelihood to find the most probable point. MAP considers both the likelihood and prior.
+    MPE finds the mode of the probability distribution. MAP finds the point that maximizes the posterior.
+    MPE is used more in context of explanatory inference - finding the best explanation. MAP is used more in estimating unknown parameters.
+    MPE just maximizes likelihood. MAP incorporates prior knowledge through Bayes rule.
+    For diffuse, uniform priors, MPE and MAP converge to the same solution. But they differ for peaked, informative priors.
+    MAP is more widely used in practice as it lets you incorporate priors. MPE ignores priors which may lead to overfitting.
+
 1. [E] Suppose you want to build a model to predict the price of a stock in the next 8 hours and that the predicted price should never be off more than 10% from the actual price. Which metric would you use?
 
    ` `**Hint**: check out MAPE.
