@@ -41,7 +41,7 @@
 1. ![Problematic loss curves](Aspose.Words.4d37bd4e-95e5-4072-89be-7c3f27de2772.002.png)
 
 1. [E] Your team is building a system to aid doctors in predicting whether a patient has cancer or not from their X-ray scan. Your colleague announces that the problem is solved now that they’ve built a system that can predict with 99.99% accuracy. How would you respond to that claim?
-   1. Ask whether the accuracy is on the train sample or on an unseen sample. Do multiple tests in real life data to check if the same accuracy is achieved. Make sure model is not overfit.
+   1. Ask whether the accuracy is on the train sample or on an unseen sample. Do multiple tests in real life data to check if the same accuracy is achieved. Make sure model is not overfit. In this case, it most likely looks like an imbalanced class situation with number of cancer patients being significantly lesser. Check other metrics such as F1 score or ROC curve.
 1. **F1 score.**
    1. [E] What’s the benefit of F1 over the accuracy?
       1. Both of those metrics take class predictions as input so you will have to adjust the threshold regardless of which one you choose. Remember that the F1 score is **balancing precision and recall on the positive class** while accuracy looks at correctly classified observations both positive and negative
